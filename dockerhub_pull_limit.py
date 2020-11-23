@@ -3,6 +3,12 @@
 # Obtain the number of remaining pulls from Docker Hub
 # Compatible with Python 2 and 3
 
+# Docker Hub rate limit info: https://docs.docker.com/docker-hub/download-rate-limit
+# RateLimit* headers:
+# + https://datatracker.ietf.org/doc/draft-polli-ratelimit-headers/?include_text=1
+# + https://tools.ietf.org/id/draft-polli-ratelimit-headers-04.html
+# Other headers: https://datatracker.ietf.org/doc/active/
+
 from __future__ import print_function
 import requests
 import sys
